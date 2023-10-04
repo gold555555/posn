@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int numA[3],i ;
+	int A,B,C;
+	// input num in array
+	for(i=0;i<3;i++){
+		scanf("%d",&numA[i]);
+		//printf("%d ",numA[i]);
+	}
+	//Compare numbers
+				
+
+ 	if(numA[0]>numA[1] && numA[0]>numA[2]){
+	 	if(numA[1]>numA[2])	{
+	 		A=numA[2];
+	 		B=numA[1];
+	 		C=numA[0];
+		 }else{
+		 	A=numA[1];
+	 		B=numA[2];
+	 		C=numA[0];
+		 }
+		 	
+		 	
+	  }
+	  	printf("%d %d %d",A,B,C);
+}
