@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr1[4],arr2[4],cnt;
+    set<int> set1 , set2;
+    for(int i =0 ; i<4 ;i++){
+        cin >> arr1[i] ;
+         set1.insert(arr1[i]);
+    }
+    
+    for(int j =0 ; j<4 ; j++){
+        cin >> arr2[j];
+           set2.insert(arr2[j]);
+    }
+    
+  
+   set<int> intersection ;
+   
+   set_intersection(set1.begin(),set1.end(),set2.begin(),set2.end(),inserter(intersection,intersection.begin()));
+   
+   for(const int&value : intersection){
+       cnt++ ;
+   }
+   cout << cnt ;
+}
