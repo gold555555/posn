@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+	string  input ;
+	getline(cin,input);
+	if(input[0] == 'S'|| input[0] == 'N'){
+		reverse(input.begin(),input.end());
+		cout << input ;
+	}
+	
+	
+}
