@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+	int minute ;
+	cin >> minute;
+	int hour = minute/60;
+	int m = minute % 60;
+	int hour10 = hour-1;
+	if(m>15){
+		hour10+1;
+	}
+	if(hour10<0){
+		cout << "free" ;
+	}else{
+		int x = (hour10*10)+20 ; 
+		cout << x;
+	}
+
+}
