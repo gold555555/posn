@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std ;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	string input;
+	int kimoji =0 ;
+	getline(cin,input);
+	int length1 = input.length();
+	//int n = length1 ;
+	//cout << n;
+	for(int i=0; i<length1 ;i++){
+		char eitai =input[i];
+		int sum= 0;
+		if(eitai == 'I'){
+			sum =1 ;
+		}else if(eitai == 'V'){
+			sum =5 ;
+		}else if(eitai == 'X'){
+			sum =10 ;
+		}else if(eitai == 'L'){
+			sum =50 ;
+		}else if(eitai == 'C'){
+			sum =100 ;
+		}else if(eitai == 'D'){
+			sum =500 ;
+		}else if(eitai == 'M'){
+			sum =1000 ;
+		}
+		kimoji += sum;
+	}
+	
+	cout << kimoji ;
+	return 0 ;
+}
