@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void createPyramid(const string& text) {
+    int textLength = text.length();
+    	int m = textLength ;
+    for (int i = 1; i <= m; i += 2) {
+        int padding = (m - i) / 2;
+        string line = string(padding, ' ') + text.substr(0, i) + string(padding, ' ');
+        cout << line << endl;
+    }
+}
+
+int main() {
+    string n;
+   
+    cin >> n;
+    int textLength = n.length();
+
+    if (textLength % 2 == 0) {
+       return 0 ;
+    } else {
+        createPyramid(n);
+    }
+
+    return 0;
+}
